@@ -25,8 +25,7 @@ SECRET_KEY = 'k(o1s&aad*&x*x6r+t=h!a$k(*0y%74rl&w-bc82-9-p!x3bj)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'dudoser.pythonanywhere.com']
-
+ALLOWED_HOSTS = ['frielender.pythonanywhere.com','127.0.0.1', 'dudoser.pythonanywhere.com']
 
 # Application definition
 
