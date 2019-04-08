@@ -1,26 +1,8 @@
-<html>
-    <head>
-        <title>Django Girls blog</title>
-    </head>
-    <body>
-        <!--<div>-->
-            <!--<h1><a href="/">Django Girls Blog</a></h1>-->
-        <!--</div>-->
-         <div>
-            <img src="{{ STATIC_URL }}diman.jpg"alt="Hi!" />
-             <br>
-            <img src="{{ STATIC_URL }}ya.jpg"alt="Hi!" />
-        </div>
-        <!--<div>-->
-            <!--<p>published: 14.06.2014, 12:14</p>-->
-            <!--<h2><a href="">My first post</a></h2>-->
-            <!--<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>-->
-        <!--</div>-->
+{% extends 'blog/ss.html' %}
 
-        <!--<div>-->
-            <!--<p>published: 14.06.2014, 12:14</p>-->
-            <!--<h2><a href="">My second post</a></h2>-->
-            <!--<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>-->
-        <!--</div>-->
-    </body>
-</html>
+
+
+{% block content %}
+   {{ block.super }}
+    это из дочерней
+{% endblock %}
