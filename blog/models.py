@@ -36,13 +36,13 @@ class Product(models.Model):
 
 class Technology_map(models.Model):
     id = models.AutoField(primary_key=True)
-    product_id = models.IntegerField()
+    product_id =  models.ForeignKey(Product, on_delete=models.CASCADE)
     date_start =  models.DateTimeField()
     date_end = models.DateTimeField()
 
 
 class Technology_map_position(models.Model):
     id = models.AutoField(primary_key=True)
-    technology_map_id = models.IntegerField()
-    material_id = models.IntegerField()
+    material_id = models.ForeignKey(Material, on_delete=models.CASCADE)
     amount = models.IntegerField()
+    technology_map_id =  models.ForeignKey(Product, on_delete=models.CASCADE)
