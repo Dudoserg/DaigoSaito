@@ -16,11 +16,3 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-
-
-class material(models.Model):
-    id = models.IntegerField()
-    title = models.CharField(max_length=200)
-    code_material = models.CharField(max_length=100)
-    img = models.CharField(max_length=1000)
-    balance = models.IntegerField()
